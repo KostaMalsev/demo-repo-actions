@@ -5,7 +5,7 @@ def main():
     # Print a greeting to the console
     print("Hello, World and!"
     
-    # Generate a random number between 0 and ,8 sd
+    # Generate a random number between 0 and ,8 sd k
     random_number = random.randint(0, 8
     
     # Print the generated random number
