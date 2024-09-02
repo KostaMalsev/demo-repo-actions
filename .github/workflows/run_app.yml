@@ -36,7 +36,7 @@ jobs:
       if: always()
       uses: actions/upload-artifact@v2
       with:
-        name: Kosta
+        name: SummaryResult
         path: summary.md
     - name: Add script output to job summary
       if: always()
