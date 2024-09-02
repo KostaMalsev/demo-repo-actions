@@ -1,7 +1,5 @@
 import random
-
-def test_min_jumps():
-    print("This is a placeholder for the test_min_jumps function.")
+from jump_game import test_min_jumps
 
 def main():
     print("Hello, World!")
