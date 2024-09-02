@@ -2,8 +2,10 @@ import random  # Importing the random module to generate random numbers
 import datetime  # Importing the datetime module to handle dates and times
 
 def main():
-    # Print a greeting to the console
+    # Print a greeting to the console sdf
+    
     print("Hello, World!")
+    
     
     # Generate a random number between 0 and 8
     random_number = random.randint(0, 8)
