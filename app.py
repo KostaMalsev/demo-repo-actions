@@ -7,15 +7,15 @@ def main():
     print("Hello, World!")
 
     # Generate a random number between 0 and 8
-    random_number = random.randint(0, 8
+    random_number = random.randint(0, 8)
 
     # Print the generated random number
-    print(f"This is my random number: {random_number")
+    print(f"This is my random number: {random_number}")
 
     # Print the current date and time
     print(f"AI generated on {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
 
-    print("succeeded running this app"
+    print("succeeded running this app")
 
 
 # Check if this script is being run directly (and not being imported)
