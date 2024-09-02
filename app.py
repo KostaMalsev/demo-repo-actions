@@ -3,7 +3,7 @@ import datetime  # Importing the datetime module to handle dates and times
 
 def main():
     # Print a greeting to the console
-    print("Hello, World!")
+    print("Hello, World and!")
     
     # Generate a random number between 0 and 8
     random_number = random.randint(0, 8)
