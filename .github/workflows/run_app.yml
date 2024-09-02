@@ -18,23 +18,27 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Python script
+      if: always()
       run: |
         output=$(python app.py)
         echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
         echo "$output" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
     - name: Create summary file
+      if: always()
       run: |
         echo "## Python Script Output" > summary.md
         echo '```' >> summary.md
         echo "${{ env.SCRIPT_OUTPUT }}" >> summary.md
         echo '```' >> summary.md
     - name: Upload summary as artifact
+      if: always()
       uses: actions/upload-artifact@v2
       with:
         name: Kosta
         path: summary.md
     - name: Add script output to job summary
+      if: always()
       run: |
         echo "## Python Script Output" >> $GITHUB_STEP_SUMMARY
         echo '```' >> $GITHUB_STEP_SUMMARY
