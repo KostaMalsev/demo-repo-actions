@@ -1,8 +1,7 @@
 import random
-from jump_game import test_min_jumps
 
 def main():
-    print("Hello, World!")
+    print("Hello, World!"
     random_number = random.randint(0, 8)
     print(f"this is my random number= {random_number}")
 
