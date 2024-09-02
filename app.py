@@ -9,7 +9,7 @@ def main():
     random_number = random.randint(0, 8)
     
     # Print the generated random number
-    print(f"This is my random number: {random_number}")
+    print(f"This is my random number: {random_number} a")
     
     # Print the current date and time
     print(f"AI generated on {datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')}")
