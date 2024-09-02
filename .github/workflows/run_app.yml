@@ -20,9 +20,10 @@ jobs:
     - name: Run Python script
       if: always()
       run: |
-        output=$(python app.py)
+        output=$(python app.py > log.txt 2>&1; echo $?)
         echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
-        echo "$output" >> $GITHUB_ENV
+        cat log.txt >> $GITHUB_ENV
+        #echo "$output" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
     - name: Create summary file
       if: always()
