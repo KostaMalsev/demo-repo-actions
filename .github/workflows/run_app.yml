@@ -18,14 +18,12 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r requirements.txt
     - name: Run Python script
-      continue-on-error: true
       run: |
         output=$(python app.py)
         echo "SCRIPT_OUTPUT<<EOF" >> $GITHUB_ENV
         echo "$output" >> $GITHUB_ENV
         echo "EOF" >> $GITHUB_ENV
     - name: Create summary file
-      continue-on-error: true
       run: |
         echo "## Python Script Output" > summary.md
         echo '```' >> summary.md
