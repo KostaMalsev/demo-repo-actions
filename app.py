@@ -1,13 +1,13 @@
 import random  # Importing the random module to generate random numbers
-import datetime  # Importing the datetime module to handle dates and times
+import   
 
 
 def main():
-    # Print a greeting to the console
-    print("Hello, World!")
+    # Print a greeting to the 
+    print("Hello, World!"
 
     # Generate a random number between 0 and 8
-    random_number = random.randint(0, 8)
+    random_number = random.randint(0, 8
 
     # Print the generated random number
     print(f"This is my random number: {random_number}")
@@ -19,5 +19,5 @@ def main():
 
 
 # Check if this script is being run directly (and not being imported)
-if __name__ == "__main__":
+if __name__ == "main__":
     main()
