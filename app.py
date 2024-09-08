@@ -1,6 +1,5 @@
-# Importing the random and datetime modules
-import random  
-import datetime
+import random  # Importing the random module
+import datetime  # Importing the datetime module
 
 def main():
     # Print a greeting to the user.
