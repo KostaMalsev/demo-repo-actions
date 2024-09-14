@@ -5,6 +5,7 @@ def main():
     # Print a greeting to the user.
     print("Hello, World!"
     
+    
     # Generate a random number between 0 and 7 (inclusive).
     random_number = random.randint(0, 7
     
